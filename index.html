@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --accent: #38bdf8;
+            --text: #e2e8f0;
+            --subtle: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid #334155;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            color: var(--subtle);
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            color: var(--subtle);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--subtle);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your Name</h1>
+    <p>Computer Science Student | Developer | Problem Solver</p>
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/Gabriel-Johnson-1" target="_blank">GitHub</a>
+        <a href="mailto:gabriel.johnson@uvu.edu">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <section id="projects">
+        <div class="card">
+            <h2>BIOL-3100 Final Project</h2>
+            <p>Short description of your project. What it does, tools used, and why it’s cool.</p>
+        </div>
+
+        <div class="card">
+            <h2>Project Two</h2>
+            <p>Another project description. Keep it concise and impactful.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>
+                I'm a college student passionate about building software, working with data,
+                and solving real-world problems. Currently focused on machine learning,
+                data science, and full-stack development.
+            </p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 Gabriel Johnson
+</footer>
+
+</body>
+</html>
