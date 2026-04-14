@@ -82,6 +82,20 @@
             color: var(--subtle);
         }
 
+        .project-link h2 {
+            color: #85a6ff;
+            transition: color 0.2s ease;
+        }
+
+        .project-link:hover h2 {
+            color: #ffffff;
+        }
+        
+        .project-link {
+            text-decoration: none; /* removes underline */
+            color: inherit;        /* lets h2 control color */
+        }
+        
         footer {
             text-align: center;
             padding: 2rem;
@@ -110,23 +124,6 @@
 </header>
 
 <div class="container">
-
-    <section id="projects">
-        <div class="card">
-            <a href="https://gabriel-johnson-1.github.io/deceptive-review-detector-site/">
-                <h2>Deceptive Review Detection in Student Housing</h2>
-            </a>
-            <p>An application of SVM for finding deceptive reviews in the domain of student housing google maps reviews.</p>
-        </div>
-
-        <div class="card">
-            <a href="https://github.com/Gabriel-Johnson-1/ct-scan-streak-artifact-removal">
-                <h2>CT-Scan Artifact Reduction Research</h2>
-            </a>
-            <p>Applications and hallucination detection in existing deep learning based CT-Scan artifact reduction methods.</p>
-        </div>
-    </section>
-
     <section id="about">
         <div class="card">
             <h2>About Me</h2>
@@ -135,6 +132,22 @@
                 and solving real-world problems. Currently focused on machine learning,
                 data science, and full-stack development.
             </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="card">
+            <a href="https://gabriel-johnson-1.github.io/deceptive-review-detector-site/" class="project-link">
+                <h2>Deceptive Review Detection in Student Housing</h2>
+            </a>
+            <p>An application of SVM for finding deceptive reviews in the domain of student housing google maps reviews.</p>
+        </div>
+
+        <div class="card">
+            <a href="https://github.com/Gabriel-Johnson-1/ct-scan-streak-artifact-removal" class="project-link">
+                <h2>CT-Scan Artifact Reduction Research</h2>
+            </a>
+            <p>Application and hallucination detection in existing deep learning based CT-Scan artifact reduction methods.</p>
         </div>
     </section>
 
